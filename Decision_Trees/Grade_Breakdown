@@ -1,0 +1,22 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+rankdir=LR ;
+0 [label="Assignment_2 <= 38.667\nentropy = 0.863\nsamples = 100.0%\nvalue = [0.286, 0.714]\nclass = Pass", fillcolor="#399de599"] ;
+1 [label="entropy = 0.0\nsamples = 20.0%\nvalue = [1.0, 0.0]\nclass = Fail", fillcolor="#e58139ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+2 [label="Midterm <= 49.074\nentropy = 0.491\nsamples = 80.0%\nvalue = [0.107, 0.893]\nclass = Pass", fillcolor="#399de5e0"] ;
+0 -> 2 [labeldistance=2.5, labelangle=45, headlabel="False"] ;
+3 [label="Project <= 71.0\nentropy = 0.971\nsamples = 14.3%\nvalue = [0.6, 0.4]\nclass = Fail", fillcolor="#e5813955"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 5.7%\nvalue = [1.0, 0.0]\nclass = Fail", fillcolor="#e58139ff"] ;
+3 -> 4 ;
+5 [label="Final <= 51.429\nentropy = 0.918\nsamples = 8.6%\nvalue = [0.333, 0.667]\nclass = Pass", fillcolor="#399de57f"] ;
+3 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 2.9%\nvalue = [1.0, 0.0]\nclass = Fail", fillcolor="#e58139ff"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 5.7%\nvalue = [0.0, 1.0]\nclass = Pass", fillcolor="#399de5ff"] ;
+5 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 65.7%\nvalue = [0.0, 1.0]\nclass = Pass", fillcolor="#399de5ff"] ;
+2 -> 8 ;
+}
