@@ -61,8 +61,8 @@ plt.title('Eigenvectors with Maximum Variance\n(on Centered Data)',horizontalali
 u1 = [np.dot(EigenVectors[0],Vcentered[n]) for n in range(Vcentered.shape[0]) ]
 u2 = [np.dot(EigenVectors[1],Vcentered[n]) for n in range(Vcentered.shape[0]) ]
 plt.subplot(122)
-plt.plot(0*np.ones(len(u1)),np.multiply(u1,EigenValues[0]),'r.')
-plt.plot(1*np.ones(len(u2)),np.multiply(u2,EigenValues[1]),'g.')
+plt.plot(0*np.ones(len(u1)),u1,'r.')
+plt.plot(1*np.ones(len(u2)),u2,'g.')
 plt.xticks([0,1],['$u_0 (%4.2f)$'%Relative_Variance[0], '$u_1 (%4.2f)$'%Relative_Variance[1]])
 plt.title('Projected Data\nPrincipal axis: %s'%PVtoken)
 plt.show()
