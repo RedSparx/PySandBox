@@ -1,3 +1,14 @@
+'''
+CROSS-ENTROPY DEMONSTRATION
+---------------------------
+This program measures the amount of information in two random variables, one gaussian, and the other uniform.  The
+entropy is measured for each and the number of bits required to represent each (given a quantization level).  Given
+codes to represent each separate random variable, the Kullback-Leibler distance is used to determine the uncertainty
+that is added if we used a code for one random variable to represent another.
+
+John Salik
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import sankey
